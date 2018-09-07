@@ -39,7 +39,7 @@ public class MongoConnection {
         List <User> list = new ArrayList<User>();
         User user = new User();
         MongoDatabase mongoDatabase = connectToMongoDB();
-        MongoCollection<Document> collection =mongoDatabase.getCollection("profile");
+        MongoCollection<Document> collection =mongoDatabase.getCollection("mymom");
         BasicDBObject basicDBObject = new BasicDBObject();
         FindIterable<Document> iterable = collection.find(basicDBObject);
         for (Document doc : iterable){
